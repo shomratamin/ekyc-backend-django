@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 206.5 227" style="enable-background:new 0 0 206.5 227;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0A6936;}
+	.st1{fill:#6EB244;}
+	.st2{fill:#F9F9FA;}
+	.st3{fill:#B0B1B1;}
+	.st4{fill:#177D43;}
+	.st5{font-family:'ChaparralPro-Bold';}
+	.st6{font-size:19.0756px;}
+</style>
+<polygon class="st0" points="103.4,8 202.4,88.9 103,174.2 4.3,88.9 "/>
+<rect x="17.6" y="26.1" class="st1" width="170.9" height="9.1"/>
+<rect x="17.6" y="35.2" class="st2" width="170.9" height="164.7"/>
+<g>
+	<rect x="32.3" y="80.8" class="st3" width="64" height="3.9"/>
+	<rect x="32.3" y="96.7" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="105.5" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="114.3" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="123.2" class="st3" width="141.5" height="3.9"/>
+</g>
+<g>
+	<rect x="32.3" y="132" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="140.8" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="149.7" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="158.5" class="st3" width="141.5" height="3.9"/>
+</g>
+<g>
+	<rect x="32.3" y="167.3" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="176.1" class="st3" width="141.5" height="3.9"/>
+	<rect x="32.3" y="184.9" class="st3" width="141.5" height="3.9"/>
+</g>
+<path class="st0" d="M202.4,88.9c0,0,0,4.1,0,10.8c0,21.8,0,71.5,0,100.5v11.4c0,5.9-4.9,10.8-10.8,10.8h-12.2
+	c-42.8,0-133.3,0-164.4,0C8.3,222.4,202.4,88.9,202.4,88.9z"/>
+<path class="st4" d="M4.3,88.9c0,0,0,4.1,0,10.8c0,21.8,0,71.5,0,100.5v11.4c0,5.9,4.9,10.8,10.8,10.8h12.2c42.8,0,133.3,0,164.4,0
+	C198.5,222.4,4.3,88.9,4.3,88.9z"/>
+<text transform="matrix(1 0 0 1 74.7788 63.5678)" class="st3 st5 st6">E-mail</text>
+</svg>

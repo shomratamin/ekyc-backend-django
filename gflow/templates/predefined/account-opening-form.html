@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EKYC Applicant Photo</title>
+    <link rel="icon" href="/static/ific/images/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="/static/ific/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/static/ific/css/mdbootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/ific/css/mdbootstrap/mdb.min.css" />
+    <link href="/static/ific/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-md header">
+            <a class="navbar-brand" href="#">
+                <img src="./static/ific/images/Logo_Header.svg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars" style="color:#afafaf; font-size:26px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto mr-2">
+                    <li class="nav-item">
+                        <a class="nav-link username" href="#">
+                            <i class="fas fa-user user-icon"></i>
+                            <label class="user-label">Sourov aich</label>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="logout-btn">
+                                <span class="logout-btn-text">Logout</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-progress">
+            <div class="opening">Application for Account Opening</div>
+            <div class="progDiv">   
+                <div class="left-controls">
+                    <button class="back-next-btn">
+                        <span class="previous round">&#8249;</span>
+                    </button>
+                    <button class="back-next-btn">
+                        <span class="next round">&#8250;</span>
+                    </button>
+                </div>
+                
+                <div class='progressDivBar'>
+                    <div class='bar'>
+                        <div class='bar__fill' style="width:50%;">
+
+                        </div>
+                    </div>
+                    <div class='point point--complete'>
+                        <div class='bullet'></div>
+                        <label></label>
+                    </div>
+                    <div class='point point--complete'>
+                        <div class='bullet'></div>
+                        <label></label>
+                    </div>
+                    <div class='point point--active'>
+                        <div class='ActiveBullet'></div>
+                        <label class="point-active-text">Personal information</label>
+                    </div>
+                    <div class='point'>
+                        <div class='UnfinushedBullet'></div>
+                        <label></label>
+                    </div>
+                    <div class='point'>
+                        <div class='UnfinushedBullet'></div>
+                        <label></label>
+                    </div>
+                </div>
+                <div class="right-controls"></div>
+            </div>
+        </div>
+        <!-- Main Container -->
+        <div class="container-app">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="personal-info-title">Personal Account Application Form</h3>
+                    <div class="account-openning-box">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="nid" class="form-control">
+                                        <label for="nid">NID Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="dob" class="form-control">
+                                        <label for="dob">Date of Birth</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="nameInEnglish" class="form-control">
+                                        <label for="nameInEnglish">Name (in English)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="nameInBangla" class="form-control">
+                                        <label for="nameInBangla">Name (in Bangla)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="fNameEng" class="form-control">
+                                        <label for="fNameEng">Father Name (in English)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="fNameBan" class="form-control">
+                                        <label for="fNameBan">Father Name (in Bangla)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="mNameEng" class="form-control">
+                                        <label for="mNameEng">Mother Name (in English)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="mNameBan" class="form-control">
+                                        <label for="mNameBan">Mother Name (in Bangla)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="sNameEng" class="form-control">
+                                        <label for="sNameEng">Spouse Name (in English)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="sNameBan" class="form-control">
+                                        <label for="sNameBan">Spouse Name (in Bangla)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="md-form">
+                                        <textarea id="prAddEng" class="md-textarea form-control" rows="1"></textarea>
+                                        <label for="prAddEng">Present Address (in English)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="md-form">
+                                        <textarea id="prAddBang" class="md-textarea form-control" rows="1"></textarea>
+                                        <label for="prAddBang">Present Address (in Bangla)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="md-form">
+                                        <textarea id="peAddEng" class="md-textarea form-control" rows="1"></textarea>
+                                        <label for="peAddEng">Permanent Address (in English)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="md-form">
+                                        <textarea id="peAddBan" class="md-textarea form-control" rows="1"></textarea>
+                                        <label for="peAddBan">Permanent Address (in Bangla)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="conNum" class="form-control">
+                                        <label for="conNum">Contact Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="eAdd" class="form-control">
+                                        <label for="eAdd">Email Address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="etin" class="form-control">
+                                        <label for="etin">E-TIN (If available)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <select class="browser-default custom-select  personal-info-select">
+                                            <option selected>Profession</option>
+                                            <option value="1">Doctor</option>
+                                            <option value="2">Teacher</option>
+                                            <option value="3">Engineer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <select class="browser-default custom-select  personal-info-select">
+                                            <option selected>Gender</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <select class="browser-default custom-select  personal-info-select">
+                                            <option selected>Religion</option>
+                                            <option value="1">Islam</option>
+                                            <option value="2">Hindu</option>
+                                            <option value="3">sheek</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <select class="browser-default custom-select  personal-info-select">
+                                            <option selected>Source of Fund</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <select class="browser-default custom-select  personal-info-select">
+                                            <option selected>REsidential Status</option>
+                                            <option value="1">Islam</option>
+                                            <option value="2">Hindu</option>
+                                            <option value="3">sheek</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="birth" class="form-control">
+                                        <label for="birth">Place of Birth</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <select class="browser-default custom-select  personal-info-select">
+                                            <option selected>Country of Birth</option>
+                                            <option value="1">Bangladesh</option>
+                                            <option value="2">India</option>
+                                            <option value="3">Chaina</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:20px;">
+                                <div class="col-12">
+                                    <label class="personal-info-label">Are you a US Resident?</label>
+                                    <div class="radio-item" >
+                                        <input type="radio" id="usResidentYes" name="usResident" value="yes">
+                                        <label for="usResidentYes">Yes</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input type="radio" id="usResidentNo" name="usResident" value="no">
+                                        <label for="usResidentNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="personal-info-label">Are You a US Citizen?</label>
+                                    <div class="radio-item">
+                                        <input type="radio" id="usCtizenYes" name="usCtizen" value="yes">
+                                        <label for="usCtizenYes">Yes</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input type="radio" id="usCtizenNo" name="usCtizen" value="no">
+                                        <label for="usCtizenNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="personal-info-label">Do you hold a US Permanent Resident Card (Green Card)?</label>
+                                    <div class="radio-item">
+                                        <input type="radio" id="usGreenCardYes" name="usGreenCard" value="yes">
+                                        <label for="usGreenCardYes">Yes</label>
+                                    </div>
+                                    <div class="radio-item" >
+                                        <input type="radio" id="usGreenCardNo" name="usGreenCard" value="no">
+                                        <label for="usGreenCardNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="personal-info-label">Do you have US residence address or US correspondence address</label>
+                                    <div class="radio-item">
+                                        <input type="radio" id="usResidenceAddrYes" name="usResidenceAddr" value="yes">
+                                        <label for="usResidenceAddrYes">Yes</label>
+                                    </div>
+                                    <div class="radio-item" >
+                                        <input type="radio" id="usResidenceAddrNo" name="usResidenceAddr" value="no">
+                                        <label for="usResidenceAddrNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <input type="text" id="usSocial" class="form-control">
+                                        <label for="usSocial">US Social Security Number</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row" style="margin: 40px 0 0 0;">
+                        <div class="col-12">
+                            <div class="md-form" style="text-align:center;margin:0;">
+                                <button type="button" class="registration-btn" onclick="goTo('ApplicantPhoto.html')">
+                                    <span class="registration-btn-text ">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+    <footer class="footer">
+        <p class="copy-right-text">© Copyright 2020 GigaTech Ltd.</p>
+    </footer>
+    <script type="text/javascript" src="/static/ific/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/ific/js/popper.min.js"></script>
+    <script type="text/javascript" src="/static/ific/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/ific/js/mdb.min.js"></script>
+    <script type="text/javascript" src="/static/ific/js/custom.js"></script>
+</body>
+
+</html>

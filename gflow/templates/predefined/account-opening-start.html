@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EKYC Application Opening Process</title>
+    <link rel="icon" href="/static/ific/images/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="/static/ific/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/static/ific/css/mdbootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/ific/css/mdbootstrap/mdb.min.css" />
+    <link href="/static/ific/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-md header">
+            <a class="navbar-brand" href="#">
+                <img src="/static/ific/images/Logo_Header.svg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars" style="color:#afafaf; font-size:26px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse nav-header" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link username" href="#">
+                            <i class="fas fa-user user-icon"></i>
+                            <label class="user-label">Sourov aich</label>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="logout-btn">
+                                <span class="logout-btn-text">Logout</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-progress">
+            <div class="opening">Application for Account Opening</div>
+            <div class="progDiv">
+                <div class="left-controls">
+                    <button class="back-next-btn">
+                        <span class="previous round">&#8249;</span>
+                    </button>
+                    <button class="back-next-btn">
+                        <span class="next round">&#8250;</span>
+                    </button>
+                </div>
+                <div class='progressDivBar' id='divProgBar'>
+                    <div class='bar'>
+                        <div class=''></div>
+                    </div>
+                    <div class='point point--active'>
+                        <div class='ActiveBullet'></div>
+                        <label class="point-active-text">Account Information</label>
+                    </div>
+                    <div class='point'>
+                        <div class='UnfinushedBullet'></div>
+                        <label></label>
+                    </div>
+                    <div class='point'>
+                        <div class='UnfinushedBullet'></div>
+                        <label></label>
+                    </div>
+                    <div class='point'>
+                        <div class='UnfinushedBullet'></div>
+                        <label></label>
+                    </div>
+                    <div class='point'>
+                        <div class='UnfinushedBullet'></div>
+                        <label></label>
+                    </div>
+                </div>
+                <div class="right-controls"></div>
+            </div>
+        </div>
+        <!-- Main Container -->
+        <div class="container-app">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <h1 class="account-opening-process">
+                        To Start with account opening process we need a few information from you:
+                    </h1>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="form-group" style="margin:30px 0;">
+                        <label class="acc-opening-label">What is your desired account type?</label>
+                        <select class="form-control custom-select">
+                            <option> Select your account type</option>
+                            <option>Personal Account</option>
+                            <option>Joint Account</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" style="margin:30px 0;">
+                        <label class="acc-opening-label" style="margin-bottom:0;">Are you a US Resident?</label><br />
+                        <div class="radio-item" style="margin-top:0;">
+                            <input type="radio" id="usCtizenYes" name="usCtizen" value="yes">
+                            <label for="usCtizenYes">Yes</label>
+                        </div>
+                        <div class="radio-item" style="margin-top:0;">
+                            <input type="radio" id="usCtizenNo" name="usCtizen" value="no">
+                            <label for="usCtizenNo">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="form-group" style="margin:30px 0;">
+                        <label class="acc-opening-label">What is your preferred branch ?</label>
+                        <select class="form-control custom-select">
+                            <option> Select your prefered branch</option>
+                            <option>Personal Account</option>
+                            <option>Joint Account</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" style="margin:30px 0;">
+                        <label class="acc-opening-label" style="width:100%;">Additional services (Tick what applied)</label> <br />
+                        <input type="checkbox" id="ritema" name="ritem" value="ropt1">
+                        <label for="ritema">Cheque Book</label>
+
+                        <input type="checkbox" id="ritema" name="ritem" value="ropt1">
+                        <label for="ritema">Debit Card</label>
+
+                        <input type="checkbox" id="ritema" name="ritem" value="ropt1">
+                        <label for="ritema">SMS Alert</label> <br />
+
+                        <input type="checkbox" id="ritema" name="ritem" value="ropt1">
+                        <label for="ritema">Digital Banking</label>
+
+                        <input type="checkbox" id="ritema" name="ritem" value="ropt1">
+                        <label for="ritema">e-Statement Facility</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="form-group">
+                        <label class="acc-opening-label" style="margin-bottom:0;">What will be your monthly transaction amount?</label>
+                        <div class="radio-item">
+                            <input type="radio" id="ritema" name="ritem" value="ropt1">
+                            <label for="ritema">Upto 1,00,000 BDT (Upto one lac Bangladeshi taka)</label>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div class="radio-item">
+                            <input type="radio" id="ritemb" name="ritem" value="ropt2">
+                            <label for="ritemb">Above 1,00,000 BDT (Above one lac Bangladeshi taka)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="registration-btn" onclick="goTo('NIDUpload.html')">
+                        <span class="registration-btn-text ">
+                            Next
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="copy-right-text">© Copyright 2020 GigaTech Ltd.</p>
+        </footer>
+        <script type="text/javascript" src="/static/ific/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/popper.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/mdb.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/custom.js"></script>
+</body>
+
+</html>

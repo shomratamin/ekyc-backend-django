@@ -1,0 +1,105 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+a.btn {
+    font-size: 12px;
+    padding: 4px 6px;
+    margin:0;
+}
+.charts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.charts > div {
+    flex-basis: 32%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+}
+
+.filter-label {
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #3C3D3C;
+    opacity: 1;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.filter-input {
+    border: 1px solid green;
+    width: 255px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.filer-select {
+    width: 255px;
+    border: 1px solid #70B32F;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+table th{
+    font-weight: 700; 
+    font-size: 13px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 0px!important;
+    padding-Bottom: 0px!important;
+    vertical-align: middle;
+    padding-left: 5px!important;
+}
+table td{
+    font-weight: 400; 
+    font-size: 11px;
+    padding-top: 0px!important;
+    padding-Bottom: 0px!important;
+    vertical-align: middle;
+    padding-left: 5px!important;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .4) url('/static/ific/images/loader.svg') 50% 50% no-repeat;
+}
+
+body.loading .modal {
+    overflow: hidden;
+}
+
+body.loading .modal {
+    display: block;
+}
+
+.export_icon {
+    width: 40px;
+}
+.export_icon:hover {
+    cursor: pointer;
+}
+
+.pagination {
+    margin: 10px auto;
+}

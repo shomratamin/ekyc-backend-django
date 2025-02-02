@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EKYC Registration</title>
+    <link rel="icon" href="/static/ific/images/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="/static/ific/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/static/ific/css/mdbootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/ific/css/mdbootstrap/mdb.min.css" />
+    <link href="/static/ific/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+# if request.method == 'POST':
+    # set mobile_no = 'none'
+    # set do_otp_redirect = false
+    # if mobile_number is not none and country_code is not none:
+        # set mobile_no = country_code ~ mobile_number
+    # endif
+    # if mobile_no != 'none' and password is not none:
+            # set user_pk = register_customer(mobile_no, email, password)
+            <!--? set user_pk = user_pk | int ?-->
+            <!--? if (user_pk > 0) ?-->
+          {{ send_otp(user_pk, mobile_no) }}
+            # set do_otp_redirect = true
+            <!--? endif ?-->
+    # endif
+    # if email is not none:
+      {{ send_email_async("email testing", "bingo", email) }}
+    # endif
+      <!--? if (do_otp_redirect == true) ?-->
+      {{ go_to_page('/onboarding/otp-verification') }}
+      <!--? endif ?-->
+# endif
+    <div id="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="/static/ific/images/Logo_Header.svg" />
+            </div>
+            <div class="logged-in-info">
+                <div class="user-info"></div>
+                <div class="setting-info"></div>
+            </div>
+        </header>
+        <!-- Main Container -->
+        <div class="container-box">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 vector-illustration">
+                    <img class="ific-vector-logo" src="/static/ific/images/Logo_Header.svg" />
+                    <img src="/static/ific/images/register.svg" />
+                </div>
+                <div class="col-md-5">
+                    <div class="registration-form">
+                        <form method="post" action="{{ request.path }}" class="needs-validation" novalidate>
+                            <div class="login-fancy pb-40 clearfix divDown">
+                                <div class="login-heading" style="margin-bottom:0;">Register your account</div>
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <select name="country_code" class="form-control ific-select">
+                                                <option value="+880">+880</option>
+                                                <option value="+121">+121</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-9">
+                                            <input name="mobile_number" type="text" id="mobileNumber" class="form-control" required>
+                                            <label for="mobileNumber">Your phone (<span class="is_required">*</span>)</label>
+                                            <div class="mobileNumber invalid-msg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input name="email" type="text" id="email" class="form-control" required>
+                                    <label for="email">Your email</label>
+                                    <div class="email invalid-msg"></div>
+                                </div>
+                                <div class="md-form">
+                                    <input name="password" type="password" id="password" class="form-control" required>
+                                    <label for="password">Password (<span class="is_required">*</span>)</label>
+                                    <div class="password invalid-msg"></div>
+                                </div>
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input name="password_c" type="password" id="cPassword" class="form-control" required>
+                                    <label for="cPassword">confirm password (<span class="is_required">*</span>)</label>
+                                    <div class="cPassword invalid-msg"></div>
+                                </div>
+                                <!-- Capcha input -->
+                                <div class="md-form">
+                                    <div class="capcha-box">
+                                        <input type="checkbox" class="capcha-check-input" required>
+                                        <p class="capcha-text">I’m not a robot</p>
+                                    </div>
+                                </div>
+                                <!-- Terms and Condition -->
+                                <div class="md-form">
+                                    <div class="terms-and-condition-box">
+                                        <input type="checkbox" value=false id="terms-and-conditions" class="terms-condition-input" required>
+                                        <span class="terms-condition-text">I have read and agreed to the <a href="">Terms & Conditions</a></span><br>
+                                        <div class="terms-and-conditions invalid-msg"></div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="register-btn">
+                                    <span class="registration-btn-text">Register</span>
+                                </button>
+                            </div>
+                        </form>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="copy-right-text">© Copyright 2020 GigaTech Ltd.</p>
+        </footer>
+        <script type="text/javascript" src="/static/ific/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/popper.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/mdb.min.js"></script>
+        <script type="text/javascript" src="/static/ific/js/custom.js"></script>
+</body>
+
+</html>

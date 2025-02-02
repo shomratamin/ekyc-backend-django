@@ -1,0 +1,17 @@
+*.pyc
+__pycache__/
+.vscode/*
+uploads/*.jpg
+tmp/*
+ec_temp/*jpg
+services/ocr/detector/checkpoints/*
+gflow/migrations/*
+app/migrations/*
+customer/migrations/*
+bank/migrations/*
+agent/migrations/*
+services/*
+node_modules
+eventmanager/node_modules
+eventmanager/package-lock.json
+
